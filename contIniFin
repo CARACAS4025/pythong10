@@ -1,0 +1,21 @@
+def mostrar_secuencia(inicio, fin):
+    if inicio > fin:
+        print("El inicio debe ser menor o igual al final.")
+        return
+    
+    numero = inicio
+    while numero <= fin:
+        print(numero)
+        numero += 1
+
+def main():
+    try:
+        inicio = int(input("Ingrese el número de inicio: "))
+        fin = int(input("Ingrese el número de fin: "))
+        mostrar_secuencia(inicio, fin)
+    except ValueError:
+        print("Por favor, ingrese números válidos.")
+
+if __name__ == "__main__":
+    main()
+

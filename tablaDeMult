@@ -1,0 +1,10 @@
+def tablaMultiplicar():
+    tabla = int(input("Escriba la tabla que quiere multiplicar: "))
+    multiplicador = int(input("Escriba hasta donde se multiplicará: "))
+    
+    for multiplicando in range(1, multiplicador + 1):
+        resultado = multiplicando * tabla
+        print(f"{tabla} X {multiplicando} = {resultado}")
+
+# Llamar a la función
+tablaMultiplicar()

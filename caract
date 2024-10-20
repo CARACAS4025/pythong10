@@ -1,0 +1,13 @@
+def contar_caracteres():
+    palabra = input("Ingrese una palabra: ")
+    longitud = len(palabra)
+    contador = 0
+
+    while contador < longitud:
+        contador += 1
+    
+    print(f"La palabra '{palabra}' tiene {longitud} caracteres.")
+    print(f"El contador llegó a: {contador}")
+
+if __name__ == "__main__":
+    contar_caracteres()
